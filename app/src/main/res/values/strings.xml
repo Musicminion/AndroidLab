@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Android Lab</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <!-- Strings used for Lab1 -->
+    <string name="Lab1_mainView_text_Hello">Hello World!</string>
+    <string name="Lab1_mainView_button_return">回到首页</string>
+
+    <!-- Strings used for Lab2 -->
+    <string name="Lab2_editView_textArea_edit">单击以修改！</string>
+    <string name="Lab2_editView_button_finish">完成修改</string>
+
+</resources>
