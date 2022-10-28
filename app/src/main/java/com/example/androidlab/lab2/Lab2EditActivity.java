@@ -1,18 +1,13 @@
 package com.example.androidlab.lab2;
-
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
-
 import com.example.androidlab.R;
 
-
 public class Lab2EditActivity  extends AppCompatActivity {
-
     private int fromIndex;
 
     @Override
@@ -20,6 +15,7 @@ public class Lab2EditActivity  extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lab2_editview);
 
+        // 获取元素
         TextView textView = (TextView) super.findViewById(R.id.Lab2_editView_source);
         EditText editText = (EditText) super.findViewById(R.id.Lab2_editView_editText);
         Button button = (Button) super.findViewById(R.id.Lab2_editView_button);

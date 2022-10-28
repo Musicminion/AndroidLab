@@ -2,28 +2,24 @@ package com.example.androidlab.lab2;
 
 import android.content.Intent;
 import android.os.Bundle;
-
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.example.androidlab.R;
-
 import java.util.ArrayList;
 import java.util.List;
 
 public class Lab2MainActivity extends AppCompatActivity {
 
-    private RecyclerView recyclerView;
-    private Lab2Adapter lab2Adapter = new Lab2Adapter(Lab2MainActivity.this);
+    private final Lab2Adapter lab2Adapter = new Lab2Adapter(Lab2MainActivity.this);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lab2_main);
 
-        recyclerView = (RecyclerView) super.findViewById(R.id.Lab2_mainView_recycleView);
+        RecyclerView recyclerView = (RecyclerView) super.findViewById(R.id.Lab2_mainView_recycleView);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(lab2Adapter);
 

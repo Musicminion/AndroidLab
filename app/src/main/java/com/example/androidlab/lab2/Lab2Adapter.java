@@ -18,16 +18,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Lab2Adapter extends RecyclerView.Adapter<Lab2Adapter.Lab2TextViewHolder> {
-
-
-    private List<String> mItems = new ArrayList<>();
-    private Context mContext;
-
-
+    private final List<String> mItems = new ArrayList<>();
+    private final Context mContext;
     public Lab2Adapter(Context context) {
         this.mContext = context;
     }
-
 
     @NonNull
     @Override
@@ -77,11 +72,9 @@ public class Lab2Adapter extends RecyclerView.Adapter<Lab2Adapter.Lab2TextViewHo
         public void bind(String text){
             mTextView.setText(text);
         }
-
         public void setTextViewIndex(int index){
             mTextView.setTag(index);
         }
-
         public void setOnClickIndex(int index){
             mTextView.setOnClickListener(view -> {
                 TextView textView = (TextView) view;
@@ -92,10 +85,8 @@ public class Lab2Adapter extends RecyclerView.Adapter<Lab2Adapter.Lab2TextViewHo
             });
         }
 
-
         @Override
-        public void onClick(View view) {
-        }
+        public void onClick(View view) {}
     }
 
 }
