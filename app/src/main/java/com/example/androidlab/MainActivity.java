@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
     // 绑定监听器
     private void textViewListenerInit(){
         for (int i = 0; i < 10; i++){
-            if(i >= 2){
+            if(i >= 4 || i ==2){
                 linearLayout.getChildAt(i).setOnClickListener(view -> {
                     Snackbar.make(view, "这个Lab还没布置呐！慌啥！😊", Snackbar.LENGTH_LONG)
                             .setAction("Action", null).show();
